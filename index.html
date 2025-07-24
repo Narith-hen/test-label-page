@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library management system</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h4>
+                <span class="material-symbols-outlined">
+                    book_ribbon
+                </span>
+                <span>
+                    Library management system
+                </span>
+            </h4>
+            <!-- Menu item -->
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        grid_view
+                    </span>
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <span>
+                        Members
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        Book
+                    </span>
+                    <span>
+                        Book list
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        history
+                    </span>
+                    <span>
+                        Borrow & Reture
+                    </span>
+                </a>
+
+            </div>
+            <!-- Use profile -->
+            <div id="profile">
+                <p id="use-profile">N</p>
+                <P>Narith HEN</P>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="flex justify-between">
+            <!-- container-item -->
+            <div>
+                <h2>Welcome back, Narith HEN</h2>
+                <p>Quick access on our system with ths dashboard.</p>
+            </div>
+            <!-- container-item -->
+            <div>
+                <button class="btn btn-blue ">Add new members</button>
+                <button class="btn btn-yellow ">Add new book</button>
+                <button class="btn btn-green ">Reture book</button>
+                <button class="btn btn-orange ">Borrow book</button>
+            </div>
+        </section>
+        <section class="card">
+            <h4>System overview</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+            <div class="flex justify-between mar-button">
+                <div class="flex flex-col align-item mar-icon">
+                    <span id="icon-container" class="justify-content flex align-item bg-icon-blue">
+                        <span class="material-symbols-outlined">
+                            server_person
+                        </span>
+                    </span>
+                    <h4>203</h4>
+                    <p class="text-sm">Total of the members</p>
+                </div>
+
+                <div class="flex flex-col align-item mar-icon">
+                    <span id="icon-container" class="justify-content flex align-item color-light-dark-green">
+                        <span class="material-symbols-outlined">
+                            Book
+                        </span>
+                    </span>
+                    <h4>2300</h4>
+                    <p class="text-sm">Total of book</p>
+                </div>
+                <div class="flex flex-col align-item mar-icon">
+                    <span id="icon-container" class="justify-content flex align-item color-light-green">
+                        <span class="material-symbols-outlined">
+                            newsstand
+                        </span>
+                    </span>
+                    <h4>200</h4>
+                    <p class="text-sm">Available books of borrow</p>
+                </div>
+                <div class="flex flex-col align-item mar-icon">
+                    <span id="icon-container" class="justify-content flex align-item color-light-orange">
+                        <span class="material-symbols-outlined">
+                            auto_stories_off
+                        </span>
+                    </span>
+                    <h4>35</h4>
+                    <p class="text-sm">Book has been borrow today</p>
+                </div>
+                <div class="flex flex-col align-item mar-icon">
+                    <span id="icon-container" class="justify-content flex align-item color-light-grap">
+                        <span class="material-symbols-outlined">
+                            timer
+                        </span>
+                    </span>
+                    <h4>06</h4>
+                    <p class="text-sm">Book will reture today</p>
+                </div>
+                <div class="flex flex-col align-item mar-icon">
+                    <span id="icon-container" class="justify-content flex align-item color-light-red">
+                        <span class="material-symbols-outlined">
+                            update_disabled
+                        </span>
+                    </span>
+                    <h4>03</h4>
+                    <p class="text-sm">Book late to reture</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h3>Recoard of the books that will return today and over deadline</h3>
+            <table class="wigth-table mar-icon" >
+                <thead class="color-light-grap thead-style">
+                    <tr >
+                        <th>MEMBER ID</th>
+                        <th>MEMBER NAME</th>
+                        <th>BOOK TITLE</th>
+                        <th>BORROW DATE</th>
+                        <th>DUE DATE</th>
+                        <th>START</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-mem">MEN001</td>
+                        <td>REAKSMEY SAN</td>
+                        <td>The Great Adventure</td>
+                        <td>2025-07-15</td>
+                        <td>2025-07-21</td>
+                        <td><button class="button color-light-green">On time</button></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="td-mem">MEN002</td>
+                        <td>DANE MOIK</td>
+                        <td>The Great Adventure</td>
+                        <td>2025-07-15</td>
+                        <td>2025-07-21</td>
+                        <td><button class="button color-light-red">Overduc</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card">
+            <h3>Popular books</h3>
+            <table class="wigth-table mar-icon" >
+                <thead class="color-light-grap thead-style">
+                    <tr >
+                        <th>BOOK ID</th>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>GENRE</th>
+                        <th>AVAILABILITY</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-mem">BOOK001</td>
+                        <td>Jane Doe</td>
+                        <td>Fantasy</td>
+                        <td>Available</td>
+                        <td><button class="button color-light-green">On time</button></td>
+                        <td class="k">
+                            <p class="k-c">Edit</p>
+                            <p class="k-b">Delete</p>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="td-mem">BOOK002</td>
+                        <td>John Smith</td>
+                        <td>Mystery</td>
+                        <td>On Loan</td>
+                        <td><button class="button color-light-red">Overduc</button></td>
+                        <td class="k">
+                            <p class="k-c">Edit</p>
+                            <p class="k-b">Delete</p>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="td-mem">BOOK002</td>
+                        <td>Alice Wonderland</td>
+                        <td>Programming</td>
+                        <td>Available</td>
+                        <td><button class="button color-light-red">Overduc</button></td>
+                        <td class="k">
+                            <p class="k-c">Edit</p>
+                            <p class="k-b">Delete</p>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="td-mem">BOOK002</td>
+                        <td>Chef Ramsey</td>
+                        <td>Cookbook</td>
+                        <td>Unavailable</td>
+                        <td><button class="button color-light-red">Overduc</button></td>
+                        <td class="k">
+                            <p class="k-c">Edit</p>
+                            <p class="k-b">Delete</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
