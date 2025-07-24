@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+body{
+    background-color:#efefef;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+
+header nav{
+    width: 100%;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h4{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(68, 65, 255);
+}
+header nav div{
+    
+    display: flex;
+    align-items: center;
+}
+header nav div a{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    font-weight: 600;
+}
+
+#use-profile{
+    background-color: palevioletred;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    margin-right: 8px;
+}
+
+main{
+    padding: 24px;
+}
+
+
+/* Today style by class name */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+     color: white;
+}
+.btn-blue{
+    background: rgb(50, 50, 230);
+}
+.btn-yellow{
+    background: rgb(194, 194, 0);
+}
+.btn-green{
+    background: rgb(115, 192, 0);
+}
+.btn-orange{
+    background: orange;
+}
+
+.card{
+    background-color: white;
+    padding: 16px;
+    border-radius:8px ;
+    margin-top: 16px;
+}
+#icon-container{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+
+.justify-content{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.bg-icon-blue{
+    background-color: rgb(138, 138, 255);
+    color:blue;
+}
+.flex-col{
+    flex-direction: column;
+}
+.text-sm{
+    font-size: 12px;
+    font-weight: 600;
+}
+.mar-icon{
+    margin-top: 24px;
+}
+.mar-button{
+    margin-bottom: 40px;
+}
+.color-light-green{
+    background-color: rgb(124, 255, 124);
+    color: green;
+}
+.color-light-dark-green{
+    background-color: rgb(130, 155, 130);
+    color: rgb(30, 82, 30);
+}
+.color-light-orange{
+    background-color: rgb(255, 210, 125);
+    color: orange;
+}
+.color-light-grap{
+    background-color: rgb(207, 207, 207);
+    color: rgb(80, 80, 80);
+}
+.color-light-red{
+    background-color: rgb(255, 141, 126);
+    color: rgb(255, 51, 0);
+}
+.bg-color{
+    background-color: white;
+   
+}   
+
+
+
+.thead-style tr th{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.wigth-table{
+    width: 100%;
+    border-collapse:collapse ;
+    margin: 24px 0;
+    padding: 32px 0;
+}
+
+td, th{
+    text-align: start;
+    padding: 16px;
+}
+tbody, tr td{
+    border-bottom: solid 1px rgb(202, 202, 202);
+}
+.button{
+    border: none;
+    border-radius: 12px;
+    padding: 4px;
+    font-weight: 600;
+}
+.td-mem{
+    font-weight: 700;
+}
+
+.k{
+    display: flex;
+    border: none;
+    gap: 10px;
+    font-weight: 500;
+}
+.k-c{
+    color: rgb(14, 14, 255);
+}
+.k-b{
+    color: red;
+}
